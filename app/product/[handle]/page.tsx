@@ -21,7 +21,7 @@ export default async function ProductPage({ params }: Props) {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-red-100">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="w-full px-6 lg:px-12 py-4 flex items-center justify-between">
           <Link href="/">
             <Image
               src="/logomugg.png"
@@ -284,9 +284,20 @@ export default async function ProductPage({ params }: Props) {
               <Link href="/#why" className="hover:text-red-600 transition-colors">Why Us</Link>
               <Link href="/product/mugg" className="hover:text-red-600 transition-colors">Shop</Link>
             </div>
-            <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} MuggButiken. All rights reserved.
-            </p>
+            <div className="text-sm text-gray-400 text-center md:text-right">
+              <p>&copy; {new Date().getFullYear()} MuggButiken. All rights reserved.</p>
+              <p className="mt-1">
+                Design & development by{" "}
+                <a
+                  href="https://intenzze.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 hover:text-red-700 transition-colors"
+                >
+                  Intenzze
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
