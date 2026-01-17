@@ -25,14 +25,6 @@ export const metadata: Metadata = {
     title: "MuggButiken - Joy in Every Cup",
     description:
       "Start your morning right with a mug that brings a smile to your face. Handcrafted mugs designed to bring joy to your daily routine.",
-    images: [
-      {
-        url: "/logomugg.png",
-        width: 1200,
-        height: 630,
-        alt: "MuggButiken Logo",
-      },
-    ],
     locale: "en_US",
     type: "website",
   },
@@ -41,7 +33,6 @@ export const metadata: Metadata = {
     title: "MuggButiken - Joy in Every Cup",
     description:
       "Start your morning right with a mug that brings a smile to your face. Handcrafted mugs designed to bring joy to your daily routine.",
-    images: ["/logomugg.png"],
   },
 };
 
