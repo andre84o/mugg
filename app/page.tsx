@@ -12,7 +12,7 @@ export default function Home() {
               alt="MuggButiken"
               width={140}
               height={46}
-              className="h-10 md:h-12 w-auto"
+              className="h-15 md:h-18 w-auto"
               priority
             />
           </Link>
@@ -306,7 +306,7 @@ export default function Home() {
               alt="MuggButiken"
               width={120}
               height={40}
-              className="h-10 w-auto"
+              className="h-10 md:h-14 lg:h-16 w-auto"
             />
             <div className="flex items-center gap-8 text-sm text-gray-500">
               <Link
@@ -329,7 +329,10 @@ export default function Home() {
               </Link>
             </div>
             <div className="text-sm text-gray-400 text-center md:text-right">
-              <p>&copy; {new Date().getFullYear()} MuggButiken. All rights reserved.</p>
+              <p>
+                &copy; {new Date().getFullYear()} MuggButiken. All rights
+                reserved.
+              </p>
               <p className="mt-1">
                 Design & development by{" "}
                 <a
