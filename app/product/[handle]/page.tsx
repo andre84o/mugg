@@ -108,11 +108,16 @@ export default async function ProductPage({ params }: Props) {
                     />
                   </div>
                 )}
-              </div>
-
-              {/* Badge */}
-              <div className="absolute top-6 left-6 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-medium">
-                Best Seller
+                {/* Badge */}
+                <div className="absolute top-4 left-4 z-10 flex items-center gap-2 bg-white/95 backdrop-blur-md text-red-600 px-4 py-2 rounded-full shadow-xl border border-red-100/50">
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-red-500"></span>
+                  </span>
+                  <span className="font-bold text-xs uppercase tracking-widest">
+                    Best Seller
+                  </span>
+                </div>
               </div>
             </div>
 
