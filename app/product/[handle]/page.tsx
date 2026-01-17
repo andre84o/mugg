@@ -21,33 +21,33 @@ export default async function ProductPage({ params }: Props) {
     <div className="min-h-screen bg-white">
       {/* Header */}
       <header className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-red-100">
-        <div className="w-full px-6 lg:px-12 py-4 flex items-center justify-between">
+        <div className="w-full px-4 md:px-6 lg:px-12 py-3 md:py-4 flex items-center justify-between">
           <Link href="/">
             <Image
               src="/logomugg.png"
               alt="MuggButiken"
               width={140}
               height={46}
-              className="h-12 w-auto"
+              className="h-10 md:h-12 w-auto"
               priority
             />
           </Link>
-          <nav className="flex items-center gap-8">
+          <nav className="flex items-center gap-4 md:gap-8">
             <Link
               href="/#story"
-              className="text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
+              className="hidden md:block text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
             >
               Our Story
             </Link>
             <Link
               href="/#why"
-              className="text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
+              className="hidden md:block text-sm font-medium text-gray-600 hover:text-red-600 transition-colors"
             >
               Why Us
             </Link>
             <Link
               href="/product/mugg"
-              className="bg-red-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-red-700 transition-colors"
+              className="bg-red-600 text-white px-4 md:px-5 py-2 md:py-2.5 rounded-full text-sm font-medium hover:bg-red-700 transition-colors"
             >
               Shop Now
             </Link>
