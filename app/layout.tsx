@@ -12,8 +12,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ??
+  (process.env.NODE_ENV === "production"
+    ? "https://mugg.vercel.app"
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://muggbutiken.com"),
+  metadataBase: new URL(siteUrl),
   title: "MuggButiken - Joy in Every Cup",
   description:
     "Start your morning right with a mug that brings a smile to your face. Handcrafted mugs designed to bring joy to your daily routine.",
@@ -27,12 +34,21 @@ export const metadata: Metadata = {
       "Start your morning right with a mug that brings a smile to your face. Handcrafted mugs designed to bring joy to your daily routine.",
     locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/logomugg_300x300.png",
+        width: 300,
+        height: 300,
+        alt: "MuggButiken",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "MuggButiken - Joy in Every Cup",
     description:
       "Start your morning right with a mug that brings a smile to your face. Handcrafted mugs designed to bring joy to your daily routine.",
+    images: ["/logomugg_300x300.png"],
   },
 };
 
