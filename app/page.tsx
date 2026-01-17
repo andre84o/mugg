@@ -329,10 +329,20 @@ export default function Home() {
                 Shop
               </Link>
             </div>
-            <p className="text-sm text-gray-400">
-              &copy; {new Date().getFullYear()} MuggButiken. All rights
-              reserved.
-            </p>
+            <div className="text-sm text-gray-400 text-center md:text-right">
+              <p>&copy; {new Date().getFullYear()} MuggButiken. All rights reserved.</p>
+              <p className="mt-1">
+                Design & development by{" "}
+                <a
+                  href="https://intenzze.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-red-600 hover:text-red-700 transition-colors"
+                >
+                  Intenzze
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </footer>
